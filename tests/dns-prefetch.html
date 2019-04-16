@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>rel=dns-prefetch demo</title>
+        <link rel="dns-prefetch" href="https://www.wikipedia.org/">
+        <style>
+            img {
+                width: 250px;
+                height: 250px
+            }
+        </style>
+  </head>
+  <body>
+        <!-- large script to block parser -->
+        <script src="js/large-script.js"></script>
+
+        <!-- doc.write in images, don't do this at home folks!!! -->
+        <script>
+            document.write('<img src="https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2@2x.png" />');
+        </script>
+  </body>
+</html>
