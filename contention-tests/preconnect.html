@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>rel=preconnect demo</title>
+        <link rel="preconnect" href="https://www.google-analytics.com">
+        <link rel="preconnect" href="https://cdn.optimizely.com">
+        <link rel="preconnect" href="https://pagead2.googlesyndication.com">
+        <link rel="preconnect" href="https://assets.adobedtm.com">
+        <link rel="preconnect" href="https://ajax.googleapis.com">
+        <link rel="preconnect" href="https://securepubads.g.doubleclick.net">
+        <link rel="preconnect" href="https://connect.facebook.net">
+        <link rel="preconnect" href="https://platform.twitter.com">
+        <link rel="preconnect" href="https://s7.addthis.com">
+        <link rel="preconnect" href="https://tags.tiqcdn.com">
+        <link rel="preconnect" href="https://nexus.ensighten.com">
+        <link rel="preconnect" href="https://www.googletagmanager.com">
+        <link rel="preconnect" href="https://apis.google.com">
+        <style>
+            img {
+                width: 250px;
+                height: 250px
+            }
+        </style>
+  </head>
+  <body>
+        <!-- large script to block parser -->
+        <script src="js/large-script.js"></script>
+
+        <!-- doc.write in images, don't do this at home folks!!! -->
+        <script>
+            document.write('<img src="https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2@2x.png" />');
+        </script>
+  </body>
+</html>
